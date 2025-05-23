@@ -15,6 +15,55 @@ Use CSS para:
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
 
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none; /* Remove o contorno padrão do navegador */
+        }
+
+        /* Estilo para o campo de texto quando está em foco */
+        input[type="text"]:focus {
+            border-color: blue;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Estilo para o botão ao passar o mouse */
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
